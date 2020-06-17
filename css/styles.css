@@ -40,4 +40,8 @@ tr:hover {
 }
 .card {
     color: #6E3F19
+    
+}
+.bg-secondary {
+    background-color: #dbb08db0!important
 }
