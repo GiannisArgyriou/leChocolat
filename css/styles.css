@@ -38,10 +38,12 @@ body{
 tr:hover {
     background-color:#dbb08db0!important
 }
-.card {
-    color: #6E3F19
-    
+.card-body {
+    color: #6E3F19!important
 }
 .bg-secondary {
     background-color: #dbb08db0!important
+}
+#blackColor {
+color: black
 }
