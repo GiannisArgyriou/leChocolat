@@ -38,16 +38,19 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-6">
                     <h1>Le Chocolat</h1>
                     <p>We combine experience with creativity to create innovative tastes based on classic chocolate
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col-3 d-flex align-items-center">
+                    <img src="images/logo.png" class="img-fluid">
 
-                    <div class="col col-sm">
-                        <img src="images/logo.png" class="img-fluid">
-                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <a href="#form">
+                        <button type="button" class="btn-sm btn-warning">Reserve your baskets </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,67 +119,69 @@
         </div>
         <div class="row row-content align-items-center justify-content-center">
             <div class="col col-sm-8 ">
-                <div class="card">
+                <div class="card border-default">
                     <h3 class="card-header bg-warning text-white">Reserve your baskets</h3>
                     <div class="card-body" id="blackColor">
                         <form>
-                            <div class="form-group row">
-                                <label class="col-12 col-sm-3">
-                                    Number of baskets
-                                </label>
-                                <div class="col-12 col-sm-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option1">
-                                        <label class="form-check-label" for="inlineRadio2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio3" value="option3">
-                                        <label class="form-check-label" for="inlineRadio3">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio4" value="option4">
-                                        <label class="form-check-label" for="inlineRadio4">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio5" value="option5">
-                                        <label class="form-check-label" for="inlineRadio5">5</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio6" value="option6">
-                                        <label class="form-check-label" for="inlineRadio6">6</label>
+                            <a id="form">
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3">
+                                        Number of baskets
+                                    </label>
+                                    <div class="col-12 col-sm-9">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option1">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3">
+                                            <label class="form-check-label" for="inlineRadio3">3</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio4" value="option4">
+                                            <label class="form-check-label" for="inlineRadio4">4</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio5" value="option5">
+                                            <label class="form-check-label" for="inlineRadio5">5</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio6" value="option6">
+                                            <label class="form-check-label" for="inlineRadio6">6</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-12 col-sm-3">
-                                    Date and Time
-                                </label>
-                                <div class="input-group col-12 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="date"><i class="fa fa-calendar"
-                                                aria-hidden="true"></i></span>
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-3">
+                                        Date and Time
+                                    </label>
+                                    <div class="input-group col-12 col-sm-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="date"><i class="fa fa-calendar"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input type="date" class="form-control" id="dateInput">
                                     </div>
-                                    <input type="date" class="form-control" id="dateInput">
-                                </div>
-                                <div class="input-group col-12 col-sm-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="time"><i class="fa fa-clock-o"
-                                                aria-hidden="true"></i></span>
+                                    <div class="input-group col-12 col-sm-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="time"><i class="fa fa-clock-o"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input type="time" class="form-control" id="timeInput">
                                     </div>
-                                    <input type="time" class="form-control" id="timeInput">
                                 </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button>
+                                <button type="submit" class="btn btn-primary btn-sm col-sm-offset-2">Reserve</button>
+                            </a>
                         </form>
                     </div>
                 </div>
