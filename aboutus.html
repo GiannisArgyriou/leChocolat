@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
+    <title>Le Chocolat</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Le Chocolat</title>
+    <!-- endbuild -->
 
 </head>
 
@@ -28,7 +30,8 @@
                                     class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#"> <span class="fa fa-info fa-lg"></span>
                                 About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menu.html"> <span class="fa fa-list fa-lg"></span>
+                        <li class="nav-item"><a class="nav-link" href="menu.html"> <span
+                                    class="fa fa-list fa-lg"></span>
                                 Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"> <span
                                     class="fa fa-address-card fa-lg"></span> Contact</a></li>
@@ -53,15 +56,15 @@
             </div>
         </header>
 
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About us</li>
-            </ol>
-        </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About us</li>
+                </ol>
+            </nav>
 
-        <div class="container row-content">
-            <div class="row">
+            <div class="row row-header">
                 <div class="col-12">
                     <h3>About Us</h3>
                     <hr>
@@ -153,7 +156,8 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
                                         <h3>John Cook <small>Chef</small></h3>
                                     </button>
                                 </div>
@@ -176,13 +180,13 @@
                                 <div class="card-header" id="headingFour">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
                                         data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <h3>Vasilis Wilson <small>Sous-chef </small></h3>
+                                        <h3>Ioannis Argyriou <small>Sous-chef </small></h3>
                                     </button>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current
+                                        <p class="d-none d-sm-block">Ioannis Argyriou is well informed of all the current
                                             trends in
                                             pastry
                                             and
@@ -286,10 +290,13 @@
                 </div>
             </div>
         </footer>
+        <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
     </body>
 
 </html>

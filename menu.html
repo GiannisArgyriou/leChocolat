@@ -2,27 +2,32 @@
 <html lang="en">
 
 <head>
+    <title>Le Chocolat: Menu</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-
-    <title>Le Chocolat: Menu</title>
+    <!-- endbuild -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
 
-<body>
+<body id="menuBody">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">
@@ -65,9 +70,125 @@
                 <hr>
             </div>
         </div>
-<div class = "row row-content">
-Under Construction
-</div>
+        <section class="menu_list mt-60 mb-60">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center mb-60">
+                        <p>Famous for the best chocolate</p>
+                        <h4>our menu</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs menu_tab" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active show" id="classics-tab" data-toggle="tab" href="#classics" role="tab"
+                            aria-selected="true">Classics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="special-tab" data-toggle="tab" href="#special" role="tab"
+                            aria-selected="false">Special</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="tab-content col-xl-12" id="myTabContent">
+                    <div class="tab-pane fade active show" id="classics" role="tabpanel" aria-labelledby="classics-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food1.jpg" alt="Croissant">
+                                    <h4>Classic Croissant <span>$5</span></h4>
+                                    <p>Original, buttery taste</p>
+                                    <p><em>Look below if you want this filled with chocolate!</em></p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food2.jpeg" alt="Croissant Choco">
+                                    <h4>Croissant Le Chocolat <span>$6</span></h4>
+                                    <p>Chocolate makes anything better</p>
+                                    <p><em>Same as the classic, but filled with chocolate</em></p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food3.jpeg" alt="Drink">
+                                    <h4> Choco Drink <span>$4</span></h4>
+                                    <p>A mouth-watering experience</p>
+                                    <p><em>Ask us for potential toppings</em></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food4.jpeg" alt="Biscuits">
+                                    <h4> Choco Biscuits <span>$6</span></h4>
+                                    <p>Five chocolate biscuits for your pleasure.</p>
+                                    <p><em>Add a cup of milk for soaking in for free!</em></p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food5.jpeg" alt="Bars">
+                                    <h4> Chocolate bars <span>$6</span></h4>
+                                    <p>A classic, at its best.</p>
+                                    <p> <em>Choose between milk, white and dark chocolate.</em></p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food6.jpeg" alt="Ice Cream">
+                                    <h4> Chocolate Ice Cream <span>$7</span></h4>
+                                    <p>Fresh, creamy, tasteful</p>
+                                    <p> <em>Only served during the summer season</em> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food7.jpeg" alt="Tsoureki">
+                                    <h4>Tsourek La Fantesi <span>$8</span></h4>
+                                    <p>A tsoureki full of "Le Chocolat"</p>
+                                    <p> <em>A must have on Easter</em> </p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food8.jpeg" alt="Soufle">
+                                    <h4>Soufle Avec Moi <span>$9</span></h4>
+                                    <p>How much chocolate can you handle?</p>
+                                    <p> <em>Served hot</em> </p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food9.jpeg" alt="Black Forest">
+                                    <h4> Noir Forêt <span>$9</span></h4>
+                                    <p>A twist on the classic "Black Forest"</p>
+                                    <p> <em>Just replace cream with chocolate</em> </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food10.jpeg" alt="Delight">
+                                    <h4>Ice Cream Chocolate Delight <span>$9</span></h4>
+                                    <p>Three scoops of different types of chocolate</p>
+                                    <p> <em>Lots of combinations that you can choose from</em> </p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food11.jpeg" alt="Cake">
+                                    <h4>"Je m'appelle Chocolat" <span>$10</span></h4>
+                                    <p>A three-layered cake full of chocolate</p>
+                                    <p> <em>For two persons, unless you are really brave...</em> </p>
+                                </div>
+                                <div class="single_menu_list menu_content">
+                                    <img src="images/food12.jpeg" alt="Question Mark">
+                                    <h4> "Je nais parles pas Francais" <span>$10</span></h4>
+                                    <p>Top secret special dish!</p>
+                                    <p> <em>OK, you can probably ask us about that one</em> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <img src="images/logo.png" height="80" width="100">
+                </div>
+            </div>
+        </section>
 
     </div>
 
@@ -80,7 +201,7 @@ Under Construction
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">
@@ -89,9 +210,9 @@ Under Construction
                         121, Clear Wave Road<br>
                         Clear Wave Road, Aloha<br>
                         HAWAII<br>
-                        <i class="fa fa-phone fa-lg"></i>: +987 6543 2100<br>
-                        <i class="fa fa-fax fa-lg"></i>: +987 6543 2101<br>
-                        <i class="fa fa-envelope fa-lg"></i>: <a
+                        <i class="fa fa-phone fa-lg"></i> Tel.: +987 6543 2100<br>
+                        <i class="fa fa-fax fa-lg"></i> Fax: +987 6543 2101<br>
+                        <i class="fa fa-envelope fa-lg"></i> Email: <a
                             href="mailto:chocolat@nomail.net">chocolat@nomail.net</a>
                     </address>
                 </div>
@@ -121,9 +242,13 @@ Under Construction
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
